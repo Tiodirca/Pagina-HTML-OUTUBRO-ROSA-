@@ -1,0 +1,594 @@
+/*Especificação do corpo geral da pagina*/
+body 
+{
+	 background-image: linear-gradient(to bottom,#fff0f5,pink);	
+	margin: 0px; 
+	cursor: url(cursores/Arrow.cur),default;
+}
+
+
+/*Especificação da barra de pesquisa e posicionamento da mesma*/ 
+.pesquisa 
+{
+	margin-right:0.5%;
+	float:right;
+	position: relative; 
+}
+input {
+	width: 0%;
+	cursor: url(cursores/text.cur),pointer;
+	} 
+input,  button {padding:5px;
+
+border-radius:5px 5px 5px 5px;
+}
+/*Especificação da barra de rolagem tamanho da barra*/ 
+::-webkit-scrollbar 
+{
+    width: 15px;
+}
+/*Especificação da cor e da borda arredondada do fundo da barra de rolagem*/
+::-webkit-scrollbar-track-piece 
+{
+    background-color:white;
+	border-radius: 15px 0px 0px 15px;
+}
+/*Especificao da cor e da borda da barra de rolagem*/
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal 
+{
+    background-color: #fe4365;
+	border-radius: 15px 0px 0px 15px;
+}
+/*Especificação da cor e da borda da barra de rolagem ao passar o mouse por cima*/
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover 
+{
+    border-radius: 15px 0px 0px 15px;
+	background-color: purple;
+}
+
+/*Especificação do cursor texto*/
+.pesquisa-form
+{
+	cursor: url(cursores/text.cur),pointer;
+	border-radius: 5px 5px 5px 5px;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:3px;
+}
+/*Especificação do texto em destaque*/
+.texto-destaque 
+{
+	font-family: arial;
+	color: purple;
+	font-size: 1.0em;
+	font-weight: bold;
+	text-align: justify; 
+}
+/*Especificação do resumo da manchete da pagina index*/
+.previa_manchete 
+{
+	font-family: arial;
+	line-height: 1;
+	font-size: 62.5%; 
+}
+/*Especificação dos botoes do menu principal*/
+.botoes{
+	padding-top:2%;
+}
+.botoes ul li
+{
+	text-align: right;
+	display: inline-block;
+	margin-left:0px;
+	margin-bottom:1px;
+	padding: 0;
+	font-family: Arial;
+	font-size: 28px;
+	font-size: 1.2666666667rem;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #fe4365;
+	-webkit-box-shadow: 0 0 0 -2px white, 0 0 0 -1px #fe4365;
+	box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	border: none;
+	-webkit-transition: -webkit-box-shadow .3s;
+	transition: box-shadow .3s; 
+}
+/*Especificação efeito ao passar o mouse por cima dos botoes do menu principal*/
+.botoes ul li:hover, .botoes ul li:focus 
+{
+    box-shadow: 0 0 0 2px purple, 0 0 0 4px #ff0464;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -moz-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -o-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    -moz-animation: gelatine 0.5s 1;
+    -o-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1; 
+}
+/*Especificação do efeito gelatina dos botoes utilizados no site*/
+@keyframes gelatine 
+{
+  from,to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1); }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9); }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05); } 
+}
+/*Especificação da borda do menu principal*/
+.botoes ul li
+{
+	border-radius: 0px 0px 25px 25px;
+}
+/*Especificação da borda dos links dos submenus do menu principal*/	
+.botoes ul li ul li
+{
+	border-radius:15px 15px 15px 15px;
+	
+}
+/*Especificação do botoes do menu principal*/
+.botoes ul li 
+{
+	background-color: #fe4365;
+	float: left;
+	width:200px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 15x;
+	margin-top: 0%;
+	padding-left: 0.2%; 
+	position:relative;
+}
+/*Especificação ao passar o mouse por cima dos botoes do menu*/
+.botoes ul li:hover 
+{
+	background-color:purple; 
+}
+/*Especificação para deixar os submenus um em baixo do outro no menu principal*/
+.botoes ul 
+{
+	padding: 0px; 
+}
+/*Especificação para esconder os submenus no menu principal*/
+.botoes ul ul 
+{
+	display: none; 
+}
+/*Especificação para mostrar os submenus ao passar o mouse por cima do menu*/
+.botoes ul li:hover > ul 
+{
+	display:inline-block; 
+}
+/*Especificação dos textos e links dentro dos botoes do menu */
+.botoes a 
+{
+	color:white;
+	padding-left:7%;
+	padding-right:7%;
+	padding-bottom:5%;
+	padding-top:5%;
+	cursor: url(cursores/hand.cur),pointer;
+	text-decoration: none;
+}
+/*Especificação da borda do menu para complementar o desenho do design do site*/
+.botoes 
+{
+	border-bottom: 0.5px solid #fe4365;
+	margin-right: 11%;
+	margin-left: 0.5%; 
+}
+/*Especificação do botao buscar*/ 
+.botao-pesquisa
+{
+	padding-bottom:5%;
+	text-align: right;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 38px;
+	font-size: 1.2666666667rem;
+	cursor: url(cursores/hand.cur),pointer;
+	display: inline-block;
+	padding: .40em; 
+	outline: none;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #fe4365;
+	-webkit-box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	border: none;
+	-webkit-transition: -webkit-box-shadow .3s;
+	transition: box-shadow .3s; 
+}
+/*Especificação da animação do botao buscar*/ 
+.botao-pesquisa:hover, .botao-pesquisa:focus 
+{
+    box-shadow: 0 0 0 2px purple, 0 0 0 4px #ff0464;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -moz-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -o-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    -moz-animation: gelatine 0.5s 1;
+    -o-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1; 
+}
+/*Especificação do botao envie sua duvida*/
+.button-submit 
+{
+	margin-left: 22%;
+	text-align: right;
+	cursor: url(cursores/hand.cur),pointer;
+	display: inline-block;
+	padding: .40em;
+	font-family: Arial;
+	font-size: 38px;
+	font-size: 1.2666666667rem;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #fe4365;
+	-webkit-box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	border: none;
+	-webkit-transition: -webkit-box-shadow .3s;
+	transition: box-shadow .3s; 
+}
+/*Especificação do efeito ao passar o mouse por cima do botao envie sua duvida*/
+.button-submit:hover, .button-submit:focus 
+{
+    box-shadow: 0 0 0 2px purple, 0 0 0 4px #ff0464;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -moz-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -o-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    -moz-animation: gelatine 0.5s 1;
+    -o-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1; 
+}
+/*Especificação das imagens presente no corpo do site*/
+.contorno_img 
+{
+	 border-radius: 15px 15px 15px 15px;
+	border: 3px solid #fe4365; 
+}
+/*Especificação do efeito aumentar ao passar o mouse em cima das imagens*/  
+.contorno_img 
+ {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	cursor: url(cursores/clique.cur),pointer;
+}
+/*Especificação do tamanho que as imagens vão ficar ao passar o mouse*/
+.contorno_img:hover
+{
+	border:3px solid purple;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.2);
+}
+.imagem
+
+{
+	float:right;
+	border-radius: 15px 15px 15px 15px;
+	border: 3px solid #fe4365;
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	cursor: url(cursores/clique.cur),pointer;
+	margin-left:1%;
+}
+.imagem:hover
+{
+	border:3px solid purple;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.2);
+	margin-right:2%;
+	margin-left:4%;	
+	margin-bottom:3%;
+	margin-top:1%;
+}
+
+/*Especificação da parte dos patrocinadores*/
+.colaboradores 
+{	
+	font-family: arial;
+	color: purple;
+	float: right;
+	border-left: 3px solid #fe4365;
+	border-bottom: 3px solid #fe4365;
+	padding-left: 6px;
+	padding-right:6px;
+	border-radius: 0px 0px 0px 10px; 
+}
+/*Especificação da animacao*/
+@-webkit-keyframes bounceInDown 
+{
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/*Especificação da imagem do cabeçalho*/
+.img2 
+{
+	max-width: 100%;
+	float: left; 
+}
+/*Especificação do cabecalho*/
+.cabecalho 
+{
+	color:purple;
+	font-size: 3.5em;
+	margin-left: 20%;
+	font-family: Impact;
+	margin-bottom: 0px;  
+}
+/*Especificação da animação de rotaçao das imagens*/
+
+@keyframes animAsterisco {
+  0%, 25% {
+    opacity: 0;
+    transform: translateX(200px) rotate(180deg);
+  }
+  75%, 100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes animTexto {
+  0%, 25% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  75%, 100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Especificação do corpo da pagina envie sua duvida*/
+#duvida 
+{
+	margin-left: 0.5%;
+	color: purple;
+	font-size: 1.2em;
+	margin-right: 10%;
+	text-align: justify;
+	border-left: 3px solid #fe4365;
+	padding-left: 10%;
+	margin-top: 0%;
+	padding-top: 5.2%;
+	margin-bottom: 0%;
+	padding-bottom: 4.5%;
+	border-radius: 0px 0px 0px 6px; 
+}
+/*Especificação do corpo das paginas do site*/
+.conteudo 
+{
+	margin-left: 0.5%;
+	color:purple;
+	font-size: 1.2em;
+	margin-right: 10.5%;
+	text-align: justify;
+	border-left: 3px solid #fe4365;
+	margin-top: 0%;
+	padding-top: 3%;
+	padding-left: 5%;
+	padding-right:2%;
+	margin-bottom: 0%;
+	padding-bottom: 0.5%;
+	border-radius: 1px;
+	border-radius: 0px 0px 0px 6px; 
+}
+/*Especificação do botao proximo*/
+#botao-avance 
+{
+	float:right;
+	text-align: right;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 38px;
+	font-size: 1.2666666667rem;
+	cursor: url(cursores/hand.cur),pointer;
+	display: inline-block;
+	padding: .40em; 
+	outline: none;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #fe4365;
+	-webkit-box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	border: none;
+	-webkit-transition: -webkit-box-shadow .3s;
+	transition: box-shadow .3s; 
+}
+/*Especificação dos efeitos ao passar o mouse por cima do botao proximo*/
+#botao-avance:hover, #botao-avance:focus 
+{
+	box-shadow: 0 0 0 2px purple, 0 0 0 4px #ff0464;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -moz-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -o-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    -moz-animation: gelatine 0.5s 1;
+    -o-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1; 
+}
+#botao-avance2
+{
+	margin-left:91.8%;
+	margin-bottom:0.5%;
+	text-align: right;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 38px;
+	font-size: 1.2666666667rem;
+	cursor: url(cursores/hand.cur),pointer;
+	display: inline-block;
+	padding: .40em; 
+	outline: none;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #fe4365;
+	-webkit-box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	border: none;
+	-webkit-transition: -webkit-box-shadow .3s;
+	transition: box-shadow .3s; 
+}
+#botao-avance2:hover, #botao-avance2:focus 
+{
+	box-shadow: 0 0 0 2px purple, 0 0 0 4px #ff0464;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -moz-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -o-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    -moz-animation: gelatine 0.5s 1;
+    -o-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1; 
+}
+/*Especificação do botao anterior*/
+#botao-anterior 
+{
+	text-align: right;
+	cursor: url(cursores/hand.cur),pointer;
+	display: inline-block;
+	padding: .40em;
+	font-family: Arial;
+	font-size: 38px;
+	font-size: 1.2666666667rem;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #fe4365;
+	-webkit-box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	box-shadow: 0 0 0 -2px purple, 0 0 0 -1px #fe4365;
+	border: none;
+	-webkit-transition: -webkit-box-shadow .3s;
+	transition: box-shadow .3s; 
+}
+/*Especificação dos efeitos ao passar o mouse por cima do botao anterior*/
+#botao-anterior:hover, #botao-anterior:focus 
+{
+    box-shadow: 0 0 0 2px purple, 0 0 0 4px #ff0464;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -moz-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -o-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    -moz-animation: gelatine 0.5s 1;
+    -o-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1; 
+}
+/*Especificação do formulario*/
+textarea 
+{
+	vertical-align: top;
+	height: 5em;
+	resize: vertical; 
+}
+
+/*Especificação das caixas de texto do formulario*/
+input, textarea
+{
+	font: 1em sans-serif;
+	width: 300px;
+	border: 1px solid #fe4365;
+	outline:none;
+
+}
+/*Especificação do espassamento entre as caixas de texto*/
+form div + div 
+{
+	margin-top: 1em;
+}
+/*Especificação dos textos externos  em relacao as caixas de texto */
+label 
+{
+	display: inline-block;
+	width: 160px;
+	text-align: right; 
+	
+}
+/*Especificação do rodape da pagina*/
+.rodape 
+{
+	margin-top: 0%;
+	margin-left: 0.9%;
+	margin-bottom: 0%;
+	color: purple;
+	margin-right:30%;
+	padding-left: 10%;
+	padding-top: 0%;
+	border-top: 1px solid #fe4365;
+	border-right: 1px solid #fe4365;
+	border-radius: 0px 8px 0px 0px; 
+}
+.redes{
+	position:relative;	
+}
+.redes li
+{
+	padding-left:5%;
+	float:left;	
+	list-style-type: none;
+}
+.redes li a
+{
+	cursor: url(cursores/hand.cur),pointer;
+}
